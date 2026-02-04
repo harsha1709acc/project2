@@ -101,7 +101,10 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             <div className="inline-block mb-4">
-              <Badge variant="secondary" className="bg-sky-100 text-sky-800 border-sky-200">
+              <Badge
+                variant="secondary"
+                className="bg-sky-100 text-sky-800 border-sky-200"
+              >
                 Welcome to My Portfolio
               </Badge>
             </div>
@@ -112,21 +115,29 @@ const Index = () => {
               </span>
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
-              I create beautiful, functional web experiences. Currently exploring full-stack
-              development and modern web technologies.
+              I create beautiful, functional web experiences. Currently
+              exploring full-stack development and modern web technologies.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button
                 size="lg"
                 className="bg-sky-600 hover:bg-sky-700 text-white"
-                onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
+                onClick={() =>
+                  document
+                    .querySelector("#contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
               >
                 Get in Touch
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                onClick={() => document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })}
+                onClick={() =>
+                  document
+                    .querySelector("#projects")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
               >
                 View My Work
               </Button>
@@ -140,24 +151,35 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-6">About Me</h2>
+              <h2 className="text-4xl font-bold text-slate-900 mb-6">
+                About Me
+              </h2>
               <p className="text-lg text-slate-600 mb-4 leading-relaxed">
-                I'm a first-year student passionate about building meaningful digital experiences.
-                With a strong foundation in web development, I'm constantly learning and improving
-                my craft.
+                I'm a first-year student passionate about building meaningful
+                digital experiences. With a strong foundation in web
+                development, I'm constantly learning and improving my craft.
               </p>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                I believe in clean code, user-centered design, and the power of technology to solve
-                real-world problems. When I'm not coding, you can find me exploring new frameworks,
-                contributing to open source, or working on personal projects.
+                I believe in clean code, user-centered design, and the power of
+                technology to solve real-world problems. When I'm not coding,
+                you can find me exploring new frameworks, contributing to open
+                source, or working on personal projects.
               </p>
               <div className="flex gap-4">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button variant="outline" size="sm" className="gap-2">
                     <Github size={16} /> GitHub
                   </Button>
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button variant="outline" size="sm" className="gap-2">
                     <Linkedin size={16} /> LinkedIn
                   </Button>
@@ -177,7 +199,9 @@ const Index = () => {
       {/* Skills Section */}
       <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">Skills & Expertise</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
+            Skills & Expertise
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Technical Skills */}
@@ -186,11 +210,17 @@ const Index = () => {
                 <div className="bg-sky-600 rounded-lg p-3">
                   <Code2 size={24} className="text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900">Technical Skills</h3>
+                <h3 className="text-2xl font-bold text-slate-900">
+                  Technical Skills
+                </h3>
               </div>
               <div className="flex flex-wrap gap-3">
                 {technicalSkills.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="bg-sky-100 text-sky-900">
+                  <Badge
+                    key={skill}
+                    variant="secondary"
+                    className="bg-sky-100 text-sky-900"
+                  >
                     {skill}
                   </Badge>
                 ))}
@@ -203,11 +233,17 @@ const Index = () => {
                 <div className="bg-indigo-600 rounded-lg p-3">
                   <Users size={24} className="text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900">Soft Skills</h3>
+                <h3 className="text-2xl font-bold text-slate-900">
+                  Soft Skills
+                </h3>
               </div>
               <div className="flex flex-wrap gap-3">
                 {softSkills.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="bg-indigo-100 text-indigo-900">
+                  <Badge
+                    key={skill}
+                    variant="secondary"
+                    className="bg-indigo-100 text-indigo-900"
+                  >
                     {skill}
                   </Badge>
                 ))}
@@ -218,9 +254,14 @@ const Index = () => {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section
+        id="education"
+        className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50"
+      >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">Education</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
+            Education
+          </h2>
 
           <div className="space-y-6">
             {education.map((edu, index) => (
@@ -233,8 +274,12 @@ const Index = () => {
                     <Trophy size={24} className="text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-slate-900 mb-1">{edu.degree}</h3>
-                    <p className="text-sky-600 font-semibold mb-1">{edu.school}</p>
+                    <h3 className="text-2xl font-bold text-slate-900 mb-1">
+                      {edu.degree}
+                    </h3>
+                    <p className="text-sky-600 font-semibold mb-1">
+                      {edu.school}
+                    </p>
                     <p className="text-sm text-slate-600 mb-3">{edu.year}</p>
                     <p className="text-slate-600">{edu.description}</p>
                   </div>
@@ -248,7 +293,9 @@ const Index = () => {
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">
+            Featured Projects
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
@@ -262,8 +309,15 @@ const Index = () => {
               >
                 <div className="p-8">
                   <div className="flex items-start gap-3 mb-4">
-                    {project.featured && <Star size={20} className="text-sky-600 flex-shrink-0 mt-1" />}
-                    <h3 className="text-2xl font-bold text-slate-900">{project.title}</h3>
+                    {project.featured && (
+                      <Star
+                        size={20}
+                        className="text-sky-600 flex-shrink-0 mt-1"
+                      />
+                    )}
+                    <h3 className="text-2xl font-bold text-slate-900">
+                      {project.title}
+                    </h3>
                   </div>
                   <p className="text-slate-600 mb-6">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-6">
@@ -292,9 +346,12 @@ const Index = () => {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">Let's Connect</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-6">
+            Let's Connect
+          </h2>
           <p className="text-xl text-slate-600 mb-12">
-            I'm always interested in hearing about new opportunities and collaborations.
+            I'm always interested in hearing about new opportunities and
+            collaborations.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
@@ -306,7 +363,11 @@ const Index = () => {
               </div>
             </a>
 
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="bg-white rounded-xl p-8 hover:shadow-lg transition-shadow cursor-pointer border border-slate-200">
                 <Linkedin size={32} className="text-sky-600 mx-auto mb-4" />
                 <h3 className="font-semibold text-slate-900 mb-2">LinkedIn</h3>
@@ -314,7 +375,11 @@ const Index = () => {
               </div>
             </a>
 
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="bg-white rounded-xl p-8 hover:shadow-lg transition-shadow cursor-pointer border border-slate-200">
                 <Github size={32} className="text-sky-600 mx-auto mb-4" />
                 <h3 className="font-semibold text-slate-900 mb-2">GitHub</h3>
@@ -326,7 +391,7 @@ const Index = () => {
           <Button
             size="lg"
             className="bg-sky-600 hover:bg-sky-700 text-white"
-            onClick={() => window.location.href = "mailto:hello@example.com"}
+            onClick={() => (window.location.href = "mailto:hello@example.com")}
           >
             Send me an Email
           </Button>

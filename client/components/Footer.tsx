@@ -51,7 +51,9 @@ const Footer = () => {
                   href="#about"
                   onClick={(e) => {
                     e.preventDefault();
-                    document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" });
+                    document
+                      .querySelector("#about")
+                      ?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="hover:text-sky-400 transition-colors"
                 >
@@ -63,7 +65,9 @@ const Footer = () => {
                   href="#projects"
                   onClick={(e) => {
                     e.preventDefault();
-                    document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
+                    document
+                      .querySelector("#projects")
+                      ?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="hover:text-sky-400 transition-colors"
                 >
@@ -75,7 +79,9 @@ const Footer = () => {
                   href="#contact"
                   onClick={(e) => {
                     e.preventDefault();
-                    document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+                    document
+                      .querySelector("#contact")
+                      ?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="hover:text-sky-400 transition-colors"
                 >
@@ -111,7 +117,9 @@ const Footer = () => {
         <div className="border-t border-slate-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-slate-400 text-sm">
             <p>&copy; {currentYear} My Portfolio. All rights reserved.</p>
-            <p className="mt-4 md:mt-0">Crafted with care for professional growth</p>
+            <p className="mt-4 md:mt-0">
+              Crafted with care for professional growth
+            </p>
           </div>
         </div>
       </div>

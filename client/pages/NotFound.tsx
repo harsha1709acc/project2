@@ -24,10 +24,13 @@ const NotFound = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="text-9xl font-bold text-sky-200 mb-4">404</div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Page Not Found</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+            Page Not Found
+          </h1>
 
           <p className="text-xl text-slate-600 mb-8">
-            Sorry, the page you're looking for doesn't exist. Let me help you get back on track.
+            Sorry, the page you're looking for doesn't exist. Let me help you
+            get back on track.
           </p>
 
           <Link to="/">

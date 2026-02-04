@@ -20,7 +20,9 @@ const Placeholder = ({ title, description }: PlaceholderProps) => {
             <Lightbulb size={40} className="text-sky-600" />
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">{title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+            {title}
+          </h1>
 
           <p className="text-xl text-slate-600 mb-8">
             {description ||
